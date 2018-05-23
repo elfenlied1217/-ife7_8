@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ife7_8设计稿</title>
+		<style>
+			body{
+				overflow: auto;
+			}
+			header{
+				width:100%;
+				height:83px;
+				background-color:black;
+				position:absolute;
+				left:0;
+				top:0;
+}
+.middle1{
+	width:960px;
+	margin:0 auto;
+}
+.LOGO{
+color:yellow;
+font-size:30px;
+float:left;
+
+}
+nav{
+	color:red;
+	font-size:5px;
+	float:right;
+	
+}
+a{
+	text-decoration: underline;
+}
+
+#banner{
+	width: 100%;
+	height: 300px;
+	background-color:green;
+	position: absolute;
+	top:83px;
+	left:0;
+}
+.banner{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	color:white;
+	position:absolute;
+	bottom:0;
+	left:60%;
+	
+}
+.line{
+	display: inline-block;
+	border: solid 1px black;
+	margin: 25px;
+	background: blueviolet;
+	width:50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+}
+.line:hover{
+	background:white ;
+	width:50px;
+	height:80px;
+	text-align: center;
+	line-height: 50px;
+}
+#navbar{
+	position: absolute;
+	width:100%;
+	height: 72px;
+	left:0;
+	top:383px;
+	background-color: white;
+	border-bottom: 1px solid black;
+}
+.navbar{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	overflow: hidden;
+	
+}
+.navbarlist{
+	display:inline-block;
+height:50px;
+width:108px;
+float:left;
+ background-color: gray;
+ margin-top:22px;
+ text-align: center;
+ border:1px solid black;
+ line-height: 50px;
+}
+.active{
+	background-color:white;
+	border-bottom: 0px solid black;
+	
+}
+#context{
+	position: absolute;
+	width:100%;
+	height: 580px;
+	left:0;
+	top:470px;
+	background-color: white;
+}
+.parent{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	 justify-content:center;
+	 align-content:center;
+}
+.child{
+	border: 1px solid black;
+	flex-basis: auto;
+	padding: 80px;
+	height: 174px;
+	margin: 5px;
+	text-align: center;
+	line-height: 174px;
+}
+footer{
+	position: absolute;
+	width:100%;
+	height: 123px;
+	left:0;
+	top:1850px;
+	background: black;
+	text-align: center;
+	line-height: 123px;
+	
+		</style>
+	</head>
+	<body>
+		<header>
+						<div class="middle1">
+							
+				<h3 class="LOGO">LOGO</h3>
+				<nav>
+					<a href="#">Github</a>
+					<a  href="#">Register</a>
+					<a  href="#">index</a>
+				</nav>
+			</div>
+		</header>
+		<div id="banner">
+			<ul class="banner">
+				<li class="line"><a href="#">1</a></li>
+				<li class="line"><a href="#">2</a></li>
+				<li class="line"><a href="#">3</a></li>
+				<li class="line"><a href="#">4</a></li>
+			</ul>
+			</div>
+			<div id="navbar" >
+				<div class="middle1">
+				<ui  class="navbar">
+					<li class="navbarlist active">HOME</li>
+					<li class="navbarlist">PROFILE</li>
+					<li class="navbarlist">ABOUT</li>
+				</ui>
+			</div>
+		</div>
+		<div id="context" >
+				<div class="middle1 parent">
+					<div class="child"> This is content1</div>
+					<div class="child">Maybe content2</div>
+					<div class="child">content3</div>
+					<div class="child">content4</div>
+					<div class="child">content5</div>
+					<div class="child">content6</div>
+					<div class="child">content7</div>
+					<div class="child">content8</div>
+					<div class="child">content9</div>
+					<div class="child">content10content10content10content10content10</div>
+		       	
+			</div>
+		</div>
+		<footer>
+			<p style="color:white">©2017 Baidu 使用百度前必读 意见反馈 京ICP证030173号 </p>
+		</footer>
+	</body>
+</html>

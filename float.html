@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用float实现5种布局</title>
+		<style>
+			.div1{
+				width:100%;
+			}
+			.left1{
+			width:30%;
+			float:left;
+			height: 120px;
+			background-color: red;
+		}
+		.right1{
+			width:70%;
+			float:left;
+			height: 100px;
+			background-color: green;
+		}
+			.div4{
+				margin: 0;
+				height: 500px;
+				width:100%;
+				background-color: white;
+				color:black;
+			}
+			
+			.left4,.right4{
+				width:200px;
+				height: 500px;
+				background-color:green;
+			}
+			.left4,.right5,.middle2{
+				float:left;
+			}
+			.right4{
+				float:right;
+			}
+			.middle1{
+				margin: 0,210px;
+				background-color:red;
+				height: 500px;
+			}
+			.right5{
+				width:200px;
+				height: 500px;
+				background-color:green;
+				
+			}
+			.middle2{
+					width:calc( 100% - 400px);
+				height: 500px;
+				background-color:red;
+			}
+		</style>
+	</head>
+	<body>
+		<p>1.实现一个两栏布局，左侧占30%宽度，右侧占70%宽度</p>
+		<div class="div1 "style="width: 100%;">
+			<div class="left1">	left			</div>
+			<div class="right1">right</div>
+		</div>
+		<br/>
+		<br/>
+			<br/>
+				<br/>
+					<br/>
+						<br/>
+		<p>2.实现一个两栏布局，左侧固定宽度，右侧根据浏览器宽度进行自适应变化</p>
+		<div class="div2 "style="">
+			<div class="left2" style="float：left;width:200px;height: 100px; background-color:red; display: inline-block;">	left			</div>
+			<div class="right2" style="float:right;width:calc( 100% - 200px);height:150px;background-color:blue;dispaly:inline-block ">right</div>
+		</div>
+		<p>3.实现一个两栏布局，右侧固定宽度，左侧根据浏览器宽度进行自适应变化</p>
+		<div class="div2 "style="">
+			<div class="left2" style="float：left;width:calc( 100% - 200px);height: 100px; background-color:red; display: inline-block;">	left			</div>
+			<div class="right2" style="float:right;width:200px;height:150px;background-color:blue;dispaly:inline-block ">right</div>
+		</div>
+	<br/>
+		<br/>
+			<br/>
+				<br/>
+					<br/>
+						<br/>
+		<div class="div4 ">
+			<div class="left4" >	left			</div>
+			<div class="right4" >right</div>
+			<div class="middle1" >middle</div>
+			
+			</div>
+			<br/>
+			<br/>
+				<br/>
+					<br/>
+						<br/>
+		<div class="div4 ">
+			<div class="left4" >	left			</div>
+			<div class="right5" >right</div>
+		<div class="middle2" >middle</div>
+			
+			
+			</div>
+	</body>
+</html>

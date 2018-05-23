@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.left{
+background-color:red;
+height:150px
+}
+.right{
+background-color:blue;
+height:100px;
+}
+.middle{
+	background-color:yellow;
+	height:120px;
+}
+.main{
+background-color:black;
+width:100%
+}
+.left1{
+	width:30%;
+	position: absolute;
+	right:70%;
+}
+.right1{
+	position: absolute;
+	left:30%;
+	width:70%;
+}
+.left2,.right3{
+	width:200px;
+	position: absolute;
+	right:calc( 100% - 200px);
+}
+.right2,.left3{
+	width:calc( 100% - 200px);
+	position: absolute;
+	left:200px;
+}
+
+.left4{
+	width:200px;
+	position:absolute;
+	left:0;
+	top:0;
+	
+}
+.right4{
+	width:200px;
+	position:absolute;
+	right:0;
+	top:0;
+	
+}
+.middle4{
+	width:calc( 100% - 400px);
+ position:absolute;
+ left:200px;
+}
+
+.container4{
+	border:1px solid;
+	height:500px;
+	position:relative;
+}
+.middle5{
+	width:200px;
+	position:absolute;
+	left:200px;
+	top:0;
+	
+}
+
+
+
+		</style>
+	</head>
+	<body>
+		<p>1.实现一个两栏布局，左侧占30%宽度，右侧占70%宽度</p>
+		<div class="container1 main">
+			<div class=" left left1">left</div>
+			<div class=" right right1">right</div>
+		</div>
+		<br/>
+			<br/>
+				<br/>
+					<br/>
+						<br/>
+						<br/>
+			<br/>
+				<br/>
+					<br/>
+						<br/>
+			<p>2.实现一个两栏布局，左侧固定宽度，右侧根据浏览器宽度进行自适应变化</p>
+		<div class="container2 main">
+			<div class=" left left2">left</div>
+			<div class=" right right2">right</div>
+		</div>
+			<br/>
+			<br/>
+				<br/>
+					<br/>
+						<br/>
+						<br/>
+			<br/>
+				<br/>
+					<br/>
+						<br/>
+							<p>3.实现一个两栏布局，右侧固定宽度，左侧根据浏览器宽度进行自适应变化</p>
+		<div class="container2 main">
+			<div class=" left left3">left</div>
+			<div class=" right right3">right</div>
+		</div>
+		<br/>
+			<br/>
+				<br/>
+					<br/>
+						<br/>
+						<br/>
+			<br/>
+				<br/>
+					<br/>
+						<br/>
+						<p>4.实现一个两栏布局，右侧固定宽度，左侧根据浏览器宽度进行自适应变化</p>
+		<div class="container4 ">
+			<div class=" left left4">left</div>
+			<div class="middle middle4">middle</div>
+			<div class=" right right4">right</div>
+			</div>
+			<br/>
+			<br/>
+				<br/>
+					<br/>
+						<br/>
+						<br/>
+			<br/>
+				<br/>
+					<br/>
+						<br/>
+						<p>5.实现一个三栏布局，左侧固定宽度，中间固定宽度，右侧根据浏览器宽度变化而自适应变化</p>
+		<div class="container4 ">
+			<div class=" left left4">left</div>
+			<div class="middle middle5">middle</div>
+			<div class=" right right5">right</div>
+			</div>
+	</body>
+</html>
